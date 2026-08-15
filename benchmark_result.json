@@ -1,0 +1,28 @@
+{
+  "cloud": "aws",
+  "instance_type": "t3.micro",
+  "dataset_rows": 284807,
+  "fraud_rows": 492,
+  "fraud_ratio": 0.001727485630620034,
+  "load_time_seconds": 2.5119,
+  "training_time_seconds": 11.0549,
+  "training_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "random_state": 42,
+    "scale_pos_weight": 577.2868020304569
+  },
+  "best_iteration": null,
+  "best_iteration_note": "No early stopping used (fixed n_estimators=300); with only ~39 fraud rows available for a held-out validation split, early-stopping AUC was too noisy and stopped training after 2 trees, producing a badly underfit model. Training on the fixed estimator count instead is more stable for this dataset size.",
+  "auc_roc": 0.892914,
+  "accuracy": 0.990941,
+  "precision": 0.138408,
+  "recall": 0.816327,
+  "f1_score": 0.236686,
+  "inference_latency_ms_one_row": 1.2291,
+  "inference_latency_runs": 200,
+  "inference_throughput_rows_per_second": 58036.71,
+  "inference_throughput_batch_size": 1000
+}

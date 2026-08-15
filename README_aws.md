@@ -161,16 +161,16 @@ Chạy script và điền kết quả vào bảng:
 
 | Metric | Kết quả |
 |---|---|
-| Thời gian load data | |
-| Thời gian training | |
-| Best iteration | |
-| AUC-ROC | |
-| Accuracy | |
-| F1-Score | |
-| Precision | |
-| Recall | |
-| Inference latency (1 row) | |
-| Inference throughput (1000 rows) | |
+| Thời gian load data | 2.5119 s |
+| Thời gian training | 11.0549 s |
+| Best iteration | null (không dùng early stopping — tập validation quá ít mẫu fraud (~39 dòng) gây nhiễu, model dừng chỉ sau 2 cây; dùng số cây cố định `n_estimators=300` ổn định hơn) |
+| AUC-ROC | 0.892914 |
+| Accuracy | 0.990941 |
+| F1-Score | 0.236686 |
+| Precision | 0.138408 |
+| Recall | 0.816327 |
+| Inference latency (1 row) | 1.2291 ms |
+| Inference throughput (1000 rows) | 58,036.71 rows/s |
 
 ---
 
